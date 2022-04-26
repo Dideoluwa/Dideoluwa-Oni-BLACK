@@ -1,0 +1,419 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(11, 11, 15);
+    height: 100%;
+}
+@keyframes fade-inout{
+    0%{opacity: 1;}
+    100%{opacity: 0.1;}
+}
+@keyframes typing{
+    40%,
+    60% {
+        left: calc(3% + 30px);
+    }
+        0% {
+            left: 0;
+        }
+    }
+/* .nav{
+    border: 1px solid white;
+} */
+.color{
+    display: inline-block;
+    width: 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+    position: relative;
+    left: 80%;
+    padding: 8px;
+}
+div{
+    position: relative;
+    left: 90%;
+    height: 20px;
+    width: 30px;
+    background-color: rgb(128, 28, 15);
+    border: 1px solid rgb(11, 11, 15);
+    cursor: pointer;
+}
+.light-mode{
+    background-color: rgb(128, 28, 15);
+    cursor: pointer;
+}
+/* .clr1{
+    background-color: rgb(11, 11, 15);
+    border: 1px solid  rgb(11, 11, 15);
+}
+.clr2{
+    background-color: rgb(128, 28, 15);
+    border: 1px solid  rgb(128, 28, 15);
+} */
+/* #nav1 ul li{
+    list-style-type: none;
+    display: inline-block;
+    float : right;
+    color: white;
+    padding: 10px;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 5px;
+    right: 10%;
+    bottom: 80%;
+    background-color: rgb(11, 11, 15);
+}
+#nav2 ul li{
+    list-style-type: none;
+    display: inline-block;
+    float : right;
+    color: white;
+    padding: 10px;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 5px;
+    right: 4%;
+    bottom: 80%;
+    background-color: rgb(235, 87, 87);
+} */
+#colorblack{
+    background-color:  rgb(11, 11, 15);
+    border-radius: 100%;
+    padding: 4px;
+    color: white;
+    position: relative;
+    text-align: end;
+}
+#color{
+    background-color:  rgb(59, 183, 94);
+    border-radius: 100%;
+    padding: 1px;
+    color: white;
+    position: relative;
+    text-align: end;
+}
+#head1{
+    color: #28685E;
+    font-weight: bold;
+    font-size: 15vh;
+    position: relative;
+    top: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fade-inout 3s infinite;
+    
+}
+#head2{
+    color: #28685E;
+    font-weight: bold;
+    font-size: 10vh;
+    overflow: hidden;
+    position: absolute;
+    bottom: 40vh;
+    left: 0;
+    /* border-left: 2px solid rgb(1, 27, 51) ; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: typing 2s steps(6) infinite;
+}
+#about{
+    color: rgb(188, 182, 182);
+    position: absolute;
+    left: 25vh;
+    font-weight: normal;
+    font-size: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.links{
+    text-decoration: none;
+    color:  rgb(59, 183, 94);
+}
+.links:hover{
+    color:  rgb(1, 27, 51);
+    transition: 0.5s;
+    cursor: grab;
+}
+#contact{
+    color: #28685E;
+    position: relative;
+    top: 70vh;
+    font-weight: bold;
+    font-size: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.twitter{
+    position: relative;
+    top: 70vh;
+    font-weight: normal;
+    font-size: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media only screen and (max-width:375px){
+    .color{
+        display: inline-block;
+        width: 20px;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid white;
+        padding: 8px;
+    }
+    /* #nav1{
+        position: relative;
+        left: 72%;
+        border: 1px solid  rgb(11, 11, 15);
+    }
+    #nav2{
+        position: relative;
+        left: 73%;
+        border: 1px solid  rgb(128, 28, 15);
+    } */
+    #head1{
+        color: #28685E;
+        font-weight: bold;
+        font-size: 8vh;
+        position: relative;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        animation: fade-inout 3s infinite;
+        
+    }
+    #head2{
+        color: #28685E;
+        font-weight: bold;
+        font-size: 6vh;
+        overflow: hidden;
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        /* border-left: 2px solid rgb(1, 27, 51) ; */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        animation: fade-inout 1s ease-out;
+        animation: typing 2s steps(6) infinite;
+    }
+    #about{
+        color: rgb(188, 182, 182);
+        position: absolute;
+        top: 35vh;
+        left: 5vh;
+        font-weight: normal;
+        font-size: 3vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #contact{
+        color: #28685E;
+        position: relative;
+        top: 85vh;
+        font-weight: bold;
+        font-size: 4vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .twitter{
+        position: relative;
+        top: 85vh;
+        font-weight: normal;
+        font-size: 3vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+@media only screen and (max-width:1024px){
+    #contact{
+        color: #28685E;
+        position: relative;
+        top: 105vh;
+        font-weight: bold;
+        /* font-size: 5vh; */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .twitter{
+        position: relative;
+        top: 105vh;
+        font-weight: normal;
+        /* font-size: 5vh; */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @media only screen and (max-width:414px){
+        .color{
+            display: inline-block;
+            width: 20px;
+            margin: 5px;
+            cursor: pointer;
+            border: 1px solid white;
+            position: relative;
+            left: 70%;
+            padding: 8px;
+        }
+    
+    /* #nav1{
+        position: relative;
+        left: 72%;
+        border: 1px solid  rgb(11, 11, 15);
+    }
+    #nav2{
+        position: relative;
+        left: 73%;
+        border: 1px solid  rgb(128, 28, 15);
+    } */
+    #head1{
+            color: #28685E;
+            font-weight: bold;
+            font-size: 8vh;
+            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: fade-inout 3s infinite;
+            
+        }
+        #head2{
+            color: #28685E;
+            font-weight: bold;
+            font-size: 6vh;
+            overflow: hidden;
+            position: absolute;
+            top: 20vh;
+            left: 0;
+            /* border-left: 2px solid rgb(1, 27, 51) ; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: fade-inout 1s ease-out;
+            animation: typing 2s steps(6) infinite;
+        }
+        #about{
+            color: rgb(188, 182, 182);
+            position: absolute;
+            top: 35vh;
+            left: 5vh;
+            font-weight: normal;
+            font-size: 3vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #contact{
+            color: #28685E;
+            position: relative;
+            top: 85vh;
+            font-weight: bold;
+            font-size: 4vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .twitter{
+            position: relative;
+            top: 85vh;
+            font-weight: normal;
+            font-size: 3vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+    @media only screen and (max-width:280px){
+        .color{
+            display: inline-block;
+            width: 20px;
+            margin: 5px;
+            cursor: pointer;
+            border: 1px solid white;
+            position: relative;
+            left: 60%;
+            padding: 8px;
+        }
+        #head1{
+            color: #28685E;
+            font-weight: bold;
+            font-size: 7vh;
+            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: fade-inout 3s infinite;
+            
+        }
+        #head2{
+            color: #28685E;
+            font-weight: bold;
+            font-size: 6vh;
+            overflow: hidden;
+            position: absolute;
+            top: 10vh;
+            left: 0;
+            /* border-left: 2px solid rgb(1, 27, 51) ; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: fade-inout 1s ease-out;
+            animation: typing 2s steps(6) infinite;
+        }
+        #about{
+            color: rgb(188, 182, 182)k;
+            position: absolute;
+            top: 25vh;
+            left: 5vh;
+            font-weight: normal;
+            font-size: 3vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #contact{
+            color: #28685E;
+            position: relative;
+            top: 85vh;
+            font-weight: bold;
+            font-size: 4vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .twitter{
+            position: relative;
+            top: 85vh;
+            font-weight: normal;
+            font-size: 3vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+    @media only screen and (max-width:720px){
+        .color{
+            display: inline-block;
+            width: 20px;
+            margin: 5px;
+            cursor: pointer;
+            border: 1px solid white;
+            position: relative;
+            left: 80%;
+            padding: 8px;
+        }
+        #head1{
+            color: #28685E;
+            font-weight: bold;
+            font-size: 6vh;
+            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: fade-inout 3s infinite;
+            
+        }
+        #head2{
+            color: #28685E;
+            font-weight: bold;
+            font-size: 6vh;
+            overflow: hidden;
+            position: absolute;
+            top: 10vh;
+            left: 0;
+            /* border-left: 2px solid rgb(1, 27, 51) ; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: fade-inout 1s ease-out;
+            animation: typing 2s steps(6) infinite;
+        }
+        #about{
+            color: rgb(188, 182, 182);
+            position: absolute;
+            top: 25vh;
+            left: 5vh;
+            font-weight: normal;
+            font-size: 3vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #contact{
+            color: #28685E;
+            position: relative;
+            top: 90vh;
+            font-weight: bold;
+            font-size: 4vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .twitter{
+            position: relative;
+            top: 90vh;
+            font-weight: normal;
+            font-size: 3vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+}
